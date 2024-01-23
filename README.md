@@ -1,0 +1,2 @@
+# odooapps
+odoo free apps
