@@ -14,5 +14,5 @@
     'license': 'LGPL-3',
     'installable': True,
     'auto_install': False,
-    # 'images': ['static/description/poster_image.gif'],
+    'images': ['static/description/banner.gif'],
 }
