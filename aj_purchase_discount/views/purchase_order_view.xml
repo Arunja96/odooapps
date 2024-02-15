@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="purchase_order_line_view" model="ir.ui.view">
+        <field name="name">Purchase Order Line Discount</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page[1]//field[@name='order_line']//tree//field[@name='price_unit']"
+                   position="after">
+                <field name="discount"/>
+            </xpath>
+            <xpath expr="//notebook//page[1]//field[@name='amount_tax']" position="after">
+                <label for="discount_total"/>
+                <div style="display:flex;justify-content:flex-end;">
+                    <p style="display:flex;">
+                        <span style="margin-right:3px;">-</span>
+                        <field name="discount_total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    </p>
+                </div>
+            </xpath>
+        </field>
+
+    </record>
+</odoo>
