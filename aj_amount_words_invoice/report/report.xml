@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="inovice_report_amount_words" inherit_id="account.report_invoice_document">
+            <xpath expr="//p[@name='payment_communication']" position="before">
+                <div>
+                     <p><strong style="color:#555555">Amount in words: </strong><span t-field="o.amount_in_word"/></p>
+                </div>
+                <br/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
