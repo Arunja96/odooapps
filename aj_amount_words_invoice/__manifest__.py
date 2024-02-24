@@ -3,7 +3,7 @@
     'summary': """Total Amount in Word for Invoicing both in view
     and report.""",
     'version': '16.0.0.1.0',
-    'category': 'Sales/Sales',
+    'category': 'Accounting/Accounting',
     'author': 'Arun',
     'depends': ['account'],
     'data': [
