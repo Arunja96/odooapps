@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+    <t t-name="TaxTotalsFieldDiscount" t-inherit="account.TaxTotalsField" t-inherit-mode="extension" owl="1">
+        <xpath expr="//tbody//t" position="after">
+            <tr>
+                <td class="o_td_label">
+                    <label class="o_form_label o_tax_total_label">Discount Amount</label>
+                </td>
+
+                <td class="o_list_monetary">
+                    -
+                    <span
+                            name="amount_total"
+                            t-out="totals.formatted_discount_amount"
+                            style="white-space: nowrap;"
+                    />
+                </td>
+            </tr>
+        </xpath>
+        <xpath expr="//tbody//tr[3]" position="replace">
+            <tr>
+                <td class="o_td_label">
+                    <label class="o_form_label o_tax_total_label">Total</label>
+                </td>
+
+                <td class="o_list_monetary">
+                    <span
+                            name="amount_total"
+                            t-att-class="Object.keys(totals.groups_by_subtotal).length > 0 ? 'oe_subtotal_footer_separator' : ''"
+                            t-out="totals.formatted_amount_total_with_discount"
+                            style="font-size: 1.3em; font-weight: bold; white-space: nowrap;"
+                    />
+                </td>
+            </tr>
+        </xpath>
+    </t>
+</templates>
