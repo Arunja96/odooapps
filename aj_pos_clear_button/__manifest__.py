@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Clear All And Item Button',
-    'summary': """Clear all order lines in one click""",
+    'name': 'POS Clear Orderline',
+    'summary': """Clear all order lines in one click or one by one""",
     'version': '1.2',
     'author': 'Arun',
     'category': 'Sales/Point of Sale',
@@ -18,5 +18,5 @@
             "aj_pos_clear_button/static/src/xml/clear_item_buttom.xml",
         ]
     },
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
 }
