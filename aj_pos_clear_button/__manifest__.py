@@ -15,5 +15,5 @@
             'aj_pos_clear_button/static/src/**/*',
         ],
     },
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
 }
