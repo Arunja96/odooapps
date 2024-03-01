@@ -21,6 +21,7 @@ class Purchase(models.Model):
         for rec in self:
             total = (rec.amount_untaxed + rec.amount_tax) - rec.discount_total
             rec.tax_totals.update({
+                'model': 'purchase.order',
                 'formatted_discount_amount': formatLang(self.env, rec.discount_total,
                                                         currency_obj=rec.currency_id),
                 'formatted_amount_total_with_discount': formatLang(self.env, total,

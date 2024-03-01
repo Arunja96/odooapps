@@ -4,6 +4,7 @@
     'summary': """Discount for purchase""",
     'version': '1.2',
     'author': 'Arun',
+    'website': 'https://github.com/Arunja96/odooapps/tree/16.0',
     'category': 'Inventory/Purchase',
     'depends': ['purchase'],
     'data': [
