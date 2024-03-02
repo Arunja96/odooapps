@@ -4,7 +4,7 @@
     'summary': 'Dashboard in sale view',
     'category': 'Sales/Sales',
     'author': 'Arun',
-    'website':'https://github.com/Arunja96/odooapps/tree/16.0',
+    'website': 'https://github.com/Arunja96/odooapps/tree/17.0',
     'depends': ['sale'],
     'data': [
         'views/sale_view.xml',
